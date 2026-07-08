@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>家計のおさいふプラス｜無料FP相談</title>
+  <meta name="description" content="教育費・老後資金・保険・資産形成を家計全体で整理する、無料のFP相談サービス。30〜40代の子育て世帯を専任でサポート。勧誘一切なし・完全無料。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <p class="site-header__logo">家計のおさいふプラス</p>
+  </header>
+
+  <!-- ===== ① FV / ターゲット設定 ===== -->
+  <section class="hero">
+    <!--
+    画像役割：FV画像（ファーストビュー）
+    画像目的：教育費・老後資金・家計に不安を抱える30〜40代子育て世帯の共感を得る。「話しやすそう」「相談してみたい」という第一印象を与える。
+    推奨サイズ：750×560px
+    推奨比率：4:3（モバイル基準）/ 16:9（PC基準）
+    推奨テイスト：自然光・温かみ・家族写真・笑顔・リビングまたはカフェのような穏やかな場所・セミプロ品質
+    alt：家計について穏やかに話し合う子育て世帯の夫婦
+    -->
+    <!-- 画像差し替え時：この div ごと下記の1行に置き換えてください
+     <div class="media-placeholder media-placeholder--hero">
+      <img src="assets/images/fv-image.png" alt="家計について穏やかに話し合う子育て世帯の夫婦" class="hero-image">
+      <img class="media-placeholder__icon" src="assets/icons/icon-camera.svg" alt="" width="52" height="52">
+      <span class="media-placeholder__label">FV IMAGE（仮アイコン・写真待ち）</span>
+      <p class="media-placeholder__spec">推奨サイズ：750×560px｜推奨比率：4:3</p>
+    </div>
+    -->
+    <img src="assets/images/fv-image.png" alt="家計について穏やかに話し合う子育て世帯の夫婦" class="hero-image">
+    
+
+    <div class="hero__content">
+      <span class="badge-pill">30〜40代の子育て世帯のみなさんへ</span>
+
+      <h1 class="hero__title">教育費のこと、老後のこと、保険のこと。</h1>
+
+      <div class="hero__lead">
+        <p>「何かしなければ」と思って、いろいろ動いてきた。<br>でも、なぜかお金の不安だけはずっと消えない。</p>
+        <p class="hero__lead-strong">そんな状態が続いていませんか？</p>
+      </div>
+
+      <div class="cta-block">
+        <a href="#cta" class="btn-primary">家計の不安を整理してみる</a>
+        <p class="cta-hint">予約はわずか60秒。費用は一切かかりません。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ② 問題提起 ===== -->
+  <section class="section section--alt">
+    <div class="container">
+
+      <h2 class="section-title">あなたは、教育費・老後資金・家計管理でこんな間違いをしていませんか？</h2>
+
+      <div class="stack stack--md">
+        <div class="card card--row">
+          <div class="icon-circle icon-circle--md">
+            <img src="assets/icons/icon-question.svg" alt="" width="16" height="16">
+          </div>
+          <p>あなたは、なぜ、子どものために<strong class="text-accent">「学資保険」にまず加入してはいけないか</strong>知っていますか？</p>
+        </div>
+
+        <div class="card card--row">
+          <div class="icon-circle icon-circle--md">
+            <img src="assets/icons/icon-question.svg" alt="" width="16" height="16">
+          </div>
+          <p>あなたは、なぜ、<strong class="text-accent">「とりあえずNISAを始める」ことから手をつけてはいけないか</strong>知っていますか？</p>
+        </div>
+
+        <div class="card card--row">
+          <div class="icon-circle icon-circle--md">
+            <img src="assets/icons/icon-question.svg" alt="" width="16" height="16">
+          </div>
+          <p>あなたは、なぜ、<strong class="text-accent">家計簿アプリで毎月の支出を細かく記録することに力を入れてはいけないか</strong>知っていますか？</p>
+        </div>
+      </div>
+
+      <div class="quote-box">
+        <p>最近の相談事例を見ていると、これらが教育費・老後資金・家計管理において、ほとんどの人が知らずにおかしてしまう間違いの一部です。</p>
+        <p class="quote-box__strong">でも、これらはもっともよくある間違いに比べれば、とるに足らないものです。</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== ③ 間違いの提示 ===== -->
+  <section class="section">
+    <div class="container">
+
+      <p class="eyebrow">つまり、こういうことです。</p>
+
+      <div class="highlight-box">
+        <p class="highlight-box__title">「家計全体の状況や将来設計を整理しないまま、<br>投資・保険・節約などの対策だけを先に始めてしまう」</p>
+        <p class="highlight-box__note">これが、本当の間違いです。</p>
+      </div>
+
+      <div class="stack stack--sm">
+        <p>一つひとつは、正しいことをしているように見えます。</p>
+        <p>学資保険も、NISAも、家計簿も——それ自体が悪いわけではありません。</p>
+        <p>でも、家計全体が見えていない状態でそれぞれを始めてしまうと、対策同士が噛み合わず、気づいた頃には貴重な時間とお金を失っている、ということが実際に起きています。</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== ④ 本当の問題 ===== -->
+  <section class="section section--alt">
+    <div class="container">
+
+      <h2 class="section-title">これが現実に起きていることです。</h2>
+      <p class="section-lead">教育費の不安から慌てて学資保険に入り、老後資金の不安からNISAを始め、節約のために家計簿をつけ始める。一つひとつは「正しいこと」をしているように見えます。でも、それぞれを個別に始めてしまった結果——</p>
+
+      <div class="stack stack--md">
+
+        <div class="card">
+          <div class="card__header">
+            <div class="icon-circle icon-circle--lg icon-circle--gold">
+              <img src="assets/icons/icon-alert.svg" alt="" width="16" height="16">
+            </div>
+            <p class="card__label card__label--gold">現実①</p>
+          </div>
+          <p>保険料と投資額を合わせると毎月の生活費を圧迫し、いざ教育費が本格的にかかる時期になって<strong>「思ったように貯まっていない」</strong>と気づく。</p>
+        </div>
+
+        <div class="card">
+          <div class="card__header">
+            <div class="icon-circle icon-circle--lg icon-circle--gold">
+              <img src="assets/icons/icon-alert.svg" alt="" width="16" height="16">
+            </div>
+            <p class="card__label card__label--gold">現実②</p>
+          </div>
+          <p>相場が下がったタイミングでNISAを慌てて売ってしまい、<strong>結局何のための投資だったのかわからなくなる。</strong></p>
+        </div>
+
+        <div class="card">
+          <div class="card__header">
+            <div class="icon-circle icon-circle--lg icon-circle--gold">
+              <img src="assets/icons/icon-alert.svg" alt="" width="16" height="16">
+            </div>
+            <p class="card__label card__label--gold">現実③</p>
+          </div>
+          <p>家計全体を見ていないために、対策同士が噛み合わず、<strong>気づいた頃には貴重な時間とお金を失っている。</strong></p>
+        </div>
+
+      </div>
+
+      <p class="section-footnote">これが、教育費・老後資金に不安を抱える子育て世帯に、実際に起きていることです。</p>
+
+    </div>
+  </section>
+
+  <!-- ===== ⑤ 共感 ===== -->
+  <section class="section">
+    <div class="container">
+
+      <!--
+      画像役割：共感画像
+      画像目的：夜中にスマホでお金のことを調べている子育て世帯の不安な状態を視覚化し、読者の共感を得る
+      推奨サイズ：750×500px
+      推奨比率：3:2
+      推奨テイスト：夜・スマホ画面の光・一人・思い悩む表情・リアルな生活感・ソフトフォーカス・暖色系照明
+      alt：夜中にスマホでお金のことを調べる親
+      -->
+      <!-- 画像差し替え時：この div ごと下記の1行に置き換えてください
+       <div class="media-placeholder media-placeholder--section">
+        <img class="media-placeholder__icon" src="assets/icons/icon-camera.svg" alt="" width="44" height="44">
+        <span class="media-placeholder__label media-placeholder__label--muted">EMPATHY IMAGE（仮アイコン・写真待ち）</span>
+        <p class="media-placeholder__spec">推奨サイズ：750×500px｜推奨比率：3:2</p>
+      </div>
+      -->
+      <img src="assets/images/empathy-image.png" alt="夜中にスマホでお金のことを調べる親" class="section-image">
+      
+
+      <h2 class="section-title">夜中にスマホでお金のことを調べていませんか？</h2>
+
+      <div class="stack stack--xs">
+        <div class="speech-bubble"><p>「うちの教育費、本当に足りるのかな」</p></div>
+        <div class="speech-bubble"><p>「老後資金2,000万円って、うちには関係ない話じゃないよね」</p></div>
+        <div class="speech-bubble"><p>「保険、入りすぎてるのかな。でも減らして大丈夫？」</p></div>
+        <div class="speech-bubble"><p>「NISAって始めた方がいいのはわかってるけど、何を買えばいいの」</p></div>
+      </div>
+
+      <div class="stack stack--sm">
+        <p>調べれば調べるほど、情報が増えるだけで、答えは出ない。</p>
+        <p>何かしなければという焦りだけが、じわじわと積み重なっていく。</p>
+        <p>その「漠然とした不安の正体」が何なのか、一向にわからないまま時間だけが過ぎていく——そんな状態が続いていませんか？</p>
+        <p>あなたが不安なのは、努力が足りないからでも、知識が足りないからでもありません。</p>
+      </div>
+
+      <div class="callout-box">
+        <p>整理する順番を<br>間違えているだけです。</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== ⑥ 解決策の提示 ===== -->
+  <section class="section section--alt">
+    <div class="container">
+
+      <p class="eyebrow">では、どうすればいいのか。</p>
+      <h2 class="section-title">答えはシンプルです。</h2>
+
+      <div class="highlight-box highlight-box--outline">
+        <p class="highlight-box__title">家計全体を可視化してから、<br>ライフプランを整理する。</p>
+      </div>
+
+      <p class="section-lead">必要なお金や優先順位が見えてくることで、漠然としていた不安が「何をすればよいか」という具体的な課題へ変わっていきます。</p>
+
+      <div class="stack stack--sm">
+        <div class="qa-row">
+          <span class="qa-row__mark">Q</span>
+          <p>「我が家にはいくら必要なのか」</p>
+        </div>
+        <div class="qa-row">
+          <span class="qa-row__mark">Q</span>
+          <p>「今の収入と支出で、本当に大丈夫なのか」</p>
+        </div>
+        <div class="qa-row">
+          <span class="qa-row__mark">Q</span>
+          <p>「何を、どの順番で、どれくらい優先すればいいのか」</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <p>これが数字で見えるようになった瞬間、漠然とした不安は<strong class="text-accent">「対処できる課題」</strong>に変わります。</p>
+        <p class="card__footnote">それこそが、「家計のおさいふプラス」のメインテーマです。</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== ⑦ サービス紹介 ===== -->
+  <section class="section">
+    <div class="container">
+
+      <!--
+      画像役割：サービス紹介画像
+      画像目的：「家計のおさいふプラス」のサービスイメージ・信頼感・親しみやすさを視覚的に伝える
+      推奨サイズ：750×420px
+      推奨比率：16:9
+      推奨テイスト：FPと相談者が温かく話している風景・オフィスまたはZOOM画面・笑顔・清潔感・プロフェッショナル
+      alt：家計のおさいふプラス FP相談の様子
+      -->
+      <!-- 画像差し替え時：この div ごと下記の1行に置き換えてください
+       <div class="media-placeholder media-placeholder--section">
+        <img class="media-placeholder__icon" src="assets/icons/icon-camera.svg" alt="" width="44" height="44">
+        <span class="media-placeholder__label">SERVICE IMAGE（仮アイコン・写真待ち）</span>
+        <p class="media-placeholder__spec">推奨サイズ：750×420px｜推奨比率：16:9</p>
+      </div>
+      -->
+      <img src="assets/images/service-image.png" alt="家計のおさいふプラス FP相談の様子" class="section-image">
+      
+
+      <p class="eyebrow">「家計のおさいふプラス」とは</p>
+      <h2 class="section-title">家計・教育費・保険・資産形成を個別に考えるのではなく、<strong class="text-accent">家計全体を整理しながら将来設計を支援する、無料のFP相談サービスです。</strong></h2>
+
+      <p class="section-lead">よくあるFPマッチングサービスとは異なります。</p>
+
+      <div class="quote-card">
+        <div class="quote-card__item">
+          <span class="quote-card__mark">"</span>
+          <p>初回だけベテランFPで、2回目からは経験の浅い担当者に変わった</p>
+        </div>
+        <div class="quote-card__item quote-card__item--bordered">
+          <span class="quote-card__mark">"</span>
+          <p>相談のたびに担当が変わって、また最初から話さないといけない</p>
+        </div>
+        <p class="quote-card__conclusion">こういったことは一切ありません。</p>
+      </div>
+
+      <div class="callout-box">
+        <p>代表FPが最初から最後まで、<br>あなた専任で伴走します。</p>
+      </div>
+
+      <div class="stack stack--sm">
+
+        <div class="card card--row card--center">
+          <div class="icon-circle icon-circle--md">
+            <img src="assets/icons/icon-check-circle.svg" alt="" width="20" height="20">
+          </div>
+          <p>何度相談しても、<strong>費用は一切かかりません</strong></p>
+        </div>
+
+        <div class="card card--row card--center">
+          <div class="icon-circle icon-circle--md">
+            <img src="assets/icons/icon-check-circle.svg" alt="" width="20" height="20">
+          </div>
+          <p><strong>保険や金融商品の勧誘は行いません</strong></p>
+        </div>
+
+        <div class="card card--row card--center">
+          <div class="icon-circle icon-circle--md">
+            <img src="assets/icons/icon-check-circle.svg" alt="" width="20" height="20">
+          </div>
+          <p>オンライン（ZOOM）に完全対応。<strong>全国どこからでもご利用いただけます</strong></p>
+        </div>
+
+        <div class="card card--row card--center">
+          <div class="icon-circle icon-circle--md">
+            <img src="assets/icons/icon-check-circle.svg" alt="" width="20" height="20">
+          </div>
+          <p>小さなお子様がいても、<strong>自宅から安心してご参加いただけます</strong></p>
+        </div>
+
+      </div>
+
+      <p class="section-footnote">栃木県に拠点を構え、地域に根ざした相談を続けてきた実績と、Googleの口コミでも多くの方からいただいている評価が、その対話の質を裏付けています。</p>
+
+    </div>
+  </section>
+
+  <!-- ===== ⑧ 独自性・差別化 ===== -->
+  <section class="section section--alt">
+    <div class="container">
+
+      <h2 class="section-title">なぜ、「無理な勧誘なし」と言い切れるのか</h2>
+
+      <div class="stack stack--sm">
+        <p>FP相談と聞くと、「どうせ保険か投資信託を勧められるんでしょ」と思う方も多いと思います。</p>
+        <p>その不信感は、ごく自然なものです。</p>
+      </div>
+
+      <div class="card stack stack--sm">
+        <p>「家計のおさいふプラス」は、<strong>商品を売ることで収益を得るビジネスモデルではありません。</strong></p>
+        <p>あなたの家計全体を中立な立場で整理し、本当に必要な対策が何かを一緒に考えることが、私たちの仕事です。</p>
+        <p class="text-accent" style="font-size:18px;font-weight:900;">だから、勧誘はしません。</p>
+      </div>
+
+      <div class="card card--row card--stat">
+        <div class="stat-figure">
+          <p class="stat-figure__num">24</p>
+          <p class="stat-figure__unit">年間</p>
+        </div>
+        <div class="stat-figure__divider"></div>
+        <p>それを<strong class="text-gold">24年間</strong>続けてきた代表FPが、あなたの相談に専任で向き合います。</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== ⑨ 代表FPプロフィール ===== -->
+  <section class="section">
+    <div class="container">
+
+      <p class="eyebrow">担当するFPについて</p>
+
+      <div class="card">
+
+        <div class="fp-header">
+          <!--
+          画像役割：代表FPプロフィール写真
+          画像目的：信頼感・親しみやすさ・専門家としての安心感を視覚的に伝える
+          推奨サイズ：200×200px
+          推奨比率：1:1（正方形・円形またはアーチ形クロップ）
+          推奨テイスト：清潔感のあるオフィスまたは白背景・笑顔・ジャケットまたはスーツ・プロフェッショナルで温かみのある印象
+          alt：家計のおさいふプラス代表FP ○○○○
+          -->
+          <!-- 画像差し替え時：この div ごと下記の1行に置き換えてください
+           <div class="media-placeholder media-placeholder--avatar">
+            <img class="media-placeholder__icon" src="assets/icons/icon-person-gray.svg" alt="" width="30" height="30">
+            <span class="media-placeholder__label media-placeholder__label--sm">PHOTO（仮アイコン）</span>
+          </div>
+          -->
+          <img src="assets/images/fp-photo.jpg" alt="家計のおさいふプラス代表FP 石井修一" class="fp-header__photo">
+          
+
+          <div class="fp-header__info">
+            <h3 class="fp-header__name">石井　修一</h3>
+            <div class="tag-row">
+              <span class="tag tag--gold">FP歴 <strong>24年超</strong></span>
+              <span class="tag tag--gold">相談実績 <strong>3,000件以上</strong></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="fp-body">
+          <p>保険業界に入り<strong class="text-gold">24年超</strong>。これまでに延べ<strong class="text-gold">3,000件以上</strong>のライフプラン・保険・家計相談に携わってきました。</p>
+          <p>教育費・老後資金・保険・資産形成を「バラバラに考えない」という相談スタイルは、24年間・3,000件以上の実績の中から生まれたものです。</p>
+        </div>
+
+        <div class="fp-skills">
+          <p class="fp-skills__label">専門領域</p>
+          <div class="tag-row">
+            <span class="tag">ライフプラン設計</span>
+            <span class="tag">教育費・老後資金の整理</span>
+            <span class="tag">保険の過不足診断</span>
+            <span class="tag">家計全体の見える化</span>
+            <span class="tag">資産形成（NISA・積立）</span>
+          </div>
+        </div>
+
+        <div class="fp-quote">
+          <p class="fp-quote__main">「売るための相談ではなく、整理するための相談を。」</p>
+          <p class="fp-quote__sub">その一点だけを、24年間貫いてきました。</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ⑩ ベネフィット ===== -->
+  <section class="section section--alt">
+    <div class="container">
+
+      <h2 class="section-title">「家計のおさいふプラス」に相談した後、こんな状態になります</h2>
+
+      <div class="stack stack--md">
+
+        <div class="benefit-item">
+          <div class="benefit-item__icon">✅</div>
+          <div>
+            <p class="benefit-item__title">「我が家はまず何をすべきか」が明確になる</p>
+            <p class="benefit-item__desc">教育費・老後資金・保険・資産形成のどれを、どの順番で、どれくらい優先すべきかが整理され、「とりあえず」ではなく「根拠のある行動」が取れるようになります。</p>
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-item__icon">✅</div>
+          <div>
+            <p class="benefit-item__title">夜中にスマホでお金の検索をしなくなる</p>
+            <p class="benefit-item__desc">漠然とした不安の正体が「数字と順番」で整理されるため、何かを調べ続けなければという焦りが落ち着きます。</p>
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-item__icon">✅</div>
+          <div>
+            <p class="benefit-item__title">夫婦でお金の話がしやすくなる</p>
+            <p class="benefit-item__desc">「うちはどうすればいいの？」という会話が、共通の整理された情報をもとに、前向きに話し合える状態になります。</p>
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-item__icon">✅</div>
+          <div>
+            <p class="benefit-item__title">保険・NISA・節約の判断に迷わなくなる</p>
+            <p class="benefit-item__desc">家計全体が見えているので、「これは今の自分たちに必要か」を自分で判断できるようになります。</p>
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-item__icon">✅</div>
+          <div>
+            <p class="benefit-item__title">お金の悩みを一人で抱え込まなくて済む状態になる</p>
+            <p class="benefit-item__desc">「また話しに来ていいんだ」という安心感が生まれ、お金の悩みをいつでも相談できる場所ができます。</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ⑪ お客様の声 ===== -->
+  <section class="section">
+    <div class="container">
+
+      <h2 class="section-title">実際に相談された方の声</h2>
+
+      <div class="stack stack--lg">
+
+        <!--
+        画像役割：お客様の声アイコン（Aさん）
+        画像目的：相談者の実在感・親しみやすさを演出し、声の信頼性を高める
+        推奨サイズ：80×80px（正方形・円形クロップ）
+        推奨テイスト：シンプルなアバターアイコンまたはイラスト
+        alt：Aさん（30代・会社員・お子様2人）
+        -->
+        <div class="testimonial-card">
+          <div class="testimonial-card__head">
+            <div class="testimonial-card__avatar">
+              <img src="assets/icons/icon-personA.webp" alt="">
+            </div>
+            <div>
+              <p class="testimonial-card__name">Aさん</p>
+              <p class="testimonial-card__meta">30代・会社員・お子様2人</p>
+            </div>
+          </div>
+          <p class="testimonial-card__quote">「NISAも保険も節約も、バラバラにやっていて何が正解か全くわかりませんでした。相談してから初めて、我が家の全体像が見えた気がします。もっと早く来ればよかったです。」</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-card__head">
+            <div class="testimonial-card__avatar">
+              <img src="assets/icons/icon-personB.webp" alt="">
+            </div>
+            <div>
+              <p class="testimonial-card__name">Bさん</p>
+              <p class="testimonial-card__meta">40代・共働き・お子様1人</p>
+            </div>
+          </div>
+          <p class="testimonial-card__quote">「正直、FP相談＝保険を売られると思って警戒していました。でも、一切そういった話はなく、むしろ今加入している保険の見直しポイントを教えてもらえてびっくりしました。」</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-card__head">
+            <div class="testimonial-card__avatar">
+              <img src="assets/icons/icon-personC.webp" alt="">
+            </div>
+            <div>
+              <p class="testimonial-card__name">Cさん</p>
+              <p class="testimonial-card__meta">30代・専業主婦・お子様3人</p>
+            </div>
+          </div>
+          <p class="testimonial-card__quote">「子どもが3人いるので教育費が心配で相談しました。数字で整理してもらったら、『思ったよりなんとかなりそう』と思えて、夜中にスマホで検索しなくなりました。」</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-card__head">
+            <div class="testimonial-card__avatar">
+              <img src="assets/icons/icon-personD.webp" alt="">
+            </div>
+            <div>
+              <p class="testimonial-card__name">Dさん</p>
+              <p class="testimonial-card__meta">40代・自営業・お子様2人</p>
+            </div>
+          </div>
+          <p class="testimonial-card__quote">「老後資金2,000万円問題が頭から離れなかったのですが、自分たちの場合に必要な金額と、今からできることを整理してもらえて、ようやく前を向けた感じがします。」</p>
+        </div>
+
+      </div>
+
+      <p class="disclaimer">※上記は掲載許可をいただいたお客様の声です。後日実際の声に差し替えます。</p>
+
+    </div>
+  </section>
+
+  <!-- ===== 中間 CTA ===== -->
+  <section class="cta-section">
+    <div class="container text-center">
+      <p class="cta-section__lead">ここまで読んで、「一度話を聞いてみたいな」と思った方へ。</p>
+      <p class="cta-section__sub">準備は何もいりません。まずは今の状況を一緒に整理するところから始めましょう。</p>
+
+      <a href="#cta" class="btn-primary">家計の不安を整理してみる</a>
+
+      <p class="cta-section__hint">予約はわずか60秒。オンライン（ZOOM）・対面、どちらでも対応しています。</p>
+    </div>
+  </section>
+
+  <!-- ===== ⑫ 紹介コンテンツ ===== -->
+  <section class="section">
+    <div class="container">
+
+      <h2 class="section-title">「家計のおさいふプラス」では、こんなことも整理できます</h2>
+
+      <div class="checklist">
+        <div class="checklist__item">
+          <span class="checklist__mark">□</span>
+          <p>なぜ投資信託の銘柄を選ぶ前に、「我が家の15年カレンダー」を作らなければならないのか</p>
+        </div>
+        <div class="checklist__item">
+          <span class="checklist__mark">□</span>
+          <p>子どもが3人いても破綻しない、教育費の組み立て方</p>
+        </div>
+        <div class="checklist__item">
+          <span class="checklist__mark">□</span>
+          <p>NISAを始める前に確認すべき、たった一つの数字</p>
+        </div>
+        <div class="checklist__item">
+          <span class="checklist__mark">□</span>
+          <p>老後資金2,000万円問題の本当の意味と、あなたの家庭に必要な金額の出し方</p>
+        </div>
+        <div class="checklist__item">
+          <span class="checklist__mark">□</span>
+          <p>保険営業のプロが口にしない、固定費を下げる「保障の引き算」のルール</p>
+        </div>
+        <div class="checklist__item">
+          <span class="checklist__mark">□</span>
+          <p>「FPに相談すると勧誘される」という不信感の正体と、その回避方法</p>
+        </div>
+        <div class="checklist__item checklist__item--last">
+          <span class="checklist__mark">□</span>
+          <p>相談しただけで終わっても、まったく問題ない理由</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ⑬ 特典紹介 ===== -->
+  <section class="section section--alt">
+    <div class="container">
+
+      <div class="text-center">
+        <span class="badge-pill badge-pill--accent">今すぐお申し込みで無料プレゼント</span>
+        <h2 class="section-title section-title--center">11大特典を<br>無料プレゼント</h2>
+      </div>
+
+      <!--
+      画像役割：特典パックビジュアル画像
+      画像目的：家計改善11大特典のボリューム感・価値を視覚的に伝え、申し込み意欲を高める
+      推奨サイズ：750×480px
+      推奨比率：16:10
+      推奨テイスト：デジタルコンテンツパック・チェックシート・ツール・フラットデザイン・清潔感・整理されたビジュアル
+      alt：家計改善11大特典デジタルパックのイメージ
+      -->
+      <!-- 画像差し替え時：この div ごと下記の1行に置き換えてください
+      <div class="media-placeholder media-placeholder--section">
+        <img class="media-placeholder__icon" src="assets/icons/icon-camera.svg" alt="" width="48" height="48">
+        <span class="media-placeholder__label">BENEFIT IMAGE（仮アイコン・写真待ち）</span>
+        <p class="media-placeholder__spec">推奨サイズ：750×480px｜特典パックビジュアル</p>
+      </div>
+      -->
+      <img src="assets/images/benefit-pack.png" alt="家計改善11大特典デジタルパックのイメージ" class="section-image">
+      
+
+      <p>無料相談をご予約いただいた方全員に、家計改善・将来設計にすぐ役立つ「家計改善11大特典（デジタルパック）」をすべて無料でお届けします。</p>
+      <p>チェックシート、教育費シミュレーションツール、保険・NISAを検討する前に押さえておきたい基礎知識など、相談前の不安を減らし、具体的な行動につなげるための内容が揃っています。</p>
+
+      <div class="bonus-box">
+        <p class="bonus-box__lead">さらに、今週中にネットからお申し込みいただいた方には、以下の2大特典を優先でお届けします。</p>
+
+        <!--
+        画像役割：優先特典① 判定シートビジュアル
+        画像目的：特典の内容・実用性を視覚的に伝え申し込み意欲を高める
+        推奨サイズ：600×360px
+        推奨比率：5:3
+        推奨テイスト：判定グラフ・チェックシート・フラットデザイン・清潔感
+        alt：NISA vs 保険 vs 預金 我が家にとっての正解バランス判定シート
+        -->
+        <!-- 画像差し替え時：この div ごと下記の1行に置き換えてください
+         <div class="media-placeholder media-placeholder--bonus">
+          <span class="media-placeholder__label media-placeholder__label--accent">PRESENT IMAGE 1（写真待ち）</span>
+          <p class="media-placeholder__spec">推奨サイズ：600×360px｜判定シートビジュアル</p>
+        </div>
+        -->
+        <img src="assets/images/present-1.png" alt="NISA vs 保険 vs 預金 我が家にとっての正解バランス判定シート" class="bonus-image">
+        
+
+        <div class="bonus-item">
+          <p class="bonus-item__label">優先特典①</p>
+          <p class="bonus-item__title">『もう迷わない！NISA vs 保険 vs 預金、我が家にとっての正解バランス判定シート』</p>
+          <p class="bonus-item__desc">世間の流行ではなく、あなたのご家庭の収入と将来のイベントをもとに、どこにいくら配分するのが最も効率的かが一目でわかる特製シートです。</p>
+        </div>
+
+        <!--
+        画像役割：優先特典② チェックリストビジュアル
+        画像目的：特典の内容・削減効果を視覚的に伝え申し込み意欲を高める
+        推奨サイズ：600×360px
+        推奨比率：5:3
+        推奨テイスト：チェックリスト・家計節約・フラットデザイン・清潔感
+        alt：固定費を年間30万円削ったチェックリスト
+        -->
+        <!-- 画像差し替え時：この div ごと下記の1行に置き換えてください
+        <div class="media-placeholder media-placeholder--bonus">
+          <span class="media-placeholder__label media-placeholder__label--accent">PRESENT IMAGE 2（写真待ち）</span>
+          <p class="media-placeholder__spec">推奨サイズ：600×360px｜チェックリストビジュアル</p>
+        </div>
+        -->
+        <img src="assets/images/present-2.png" alt="固定費を年間30万円削ったチェックリスト" class="bonus-image">
+        
+
+        <div class="bonus-item">
+          <p class="bonus-item__label">優先特典②</p>
+          <p class="bonus-item__title">『固定費を年間30万円、無理なく削ったチェックリスト』</p>
+          <p class="bonus-item__desc">食費や電気代をチマチマ削るストレスなし。スマホ代・サブスク・過去の保険を見直すだけで、生活の質を落とさずに毎月の余裕を生み出すリストです。</p>
+        </div>
+      </div>
+
+      <p class="section-footnote section-footnote--center">特典を受け取るためだけにご利用いただいても、まったく構いません。「話を聞くだけ」「資料だけもらいたい」、そんな気軽な気持ちで大丈夫です。</p>
+
+    </div>
+  </section>
+
+  <!-- ===== ⑭ FAQ ===== -->
+  <section class="section">
+    <div class="container">
+
+      <h2 class="section-title">よくあるご質問</h2>
+
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-item__question" type="button" aria-expanded="false">
+            <span>Q1. 保険の勧誘は本当にありませんか？</span>
+            <span class="faq-item__arrow" aria-hidden="true">＋</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>ありません。弊社の相談スタイルは、まず家計全体を中立な立場で整理することです。その上で、もし保険の見直しや新規加入が必要と判断される場合は、その理由も含めてご説明します。「売るための相談」は、24年間一度もしたことがありません。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" type="button" aria-expanded="false">
+            <span>Q2. 費用は本当に無料ですか？</span>
+            <span class="faq-item__arrow" aria-hidden="true">＋</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>無料です。初回相談はもちろん、継続してご相談いただく場合も、何度お越しいただいてもお金はかかりません。「1回だけ無料で、2回目から有料」といった仕組みもありません。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" type="button" aria-expanded="false">
+            <span>Q3. 実際に会って相談することはできますか？</span>
+            <span class="faq-item__arrow" aria-hidden="true">＋</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>もちろんです。弊社は栃木県に拠点を構えており、足をお運びいただけるのであれば心よりお待ちしております。遠方の方やお子様がいてなかなか外出が難しい方には、ZOOMによるオンライン相談にも完全対応しています。画面越しでも直接お顔を合わせてお話できますので、全国どこからでもご利用いただけます。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" type="button" aria-expanded="false">
+            <span>Q4. どんな方が相談に来ていますか？</span>
+            <span class="faq-item__arrow" aria-hidden="true">＋</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>30〜40代の子育て世帯の方が最も多くいらっしゃいます。「教育費が心配」「老後資金が不安」「保険が多すぎるか少なすぎるかわからない」「NISAを始めたいが何から手をつければいいかわからない」など、お悩みの入口はさまざまです。「何を話せばいいかわからない」という方も多く、準備は一切不要です。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" type="button" aria-expanded="false">
+            <span>Q5. 相談だけで終わっても大丈夫ですか？</span>
+            <span class="faq-item__arrow" aria-hidden="true">＋</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>大丈夫です。「話を聞いてもらっただけで気持ちが楽になった」「整理するだけで十分だった」という方も多くいらっしゃいます。何かを契約していただくことは、相談の目的ではありません。</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ⑮ 緊急性・限定性 ===== -->
+  <section class="section section--alt">
+    <div class="container">
+
+      <div class="urgency-box">
+        <p class="urgency-box__tag">＼ 今月の相談枠、残りわずかです ／</p>
+        <p>代表FPが一人ひとりの相談に専任で向き合うため、1ヶ月にお受けできる相談件数には限りがあります。</p>
+        <p class="urgency-box__slots">現在、今月の無料相談枠は<strong>残り〇席</strong>となっています。</p>
+        <p class="urgency-box__note">（※枠数は随時更新します）</p>
+        <div class="urgency-box__inner">
+          <p>「まだ大丈夫」と思っているうちに、教育費の準備期間は確実に短くなっています。</p>
+          <p class="urgency-box__strong">整理を始めるのに、早すぎるということはありません。</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== ⑯ 最終 CTA ===== -->
+  <section class="cta-final" id="cta">
+    <div class="container text-center">
+
+      <h2 class="cta-final__title">教育費や老後資金の不安を、<br>これ以上一人で抱え込む必要はありません。</h2>
+
+      <p class="cta-final__lead">難しく考えなくて大丈夫です。<br>「ちょっと話を聞いてみようかな」、その気持ちで十分です。</p>
+
+      <p class="cta-final__sub">準備は何もいりません。まずは今の状況を一緒に整理するところから始めましょう。</p>
+      <p class="cta-final__sub">下記より、ご希望の日時をお選びください。<strong>予約はわずか60秒で完了します。</strong></p>
+
+      <a href="#cta" class="btn-primary btn-primary--lg">家計の不安を整理してみる</a>
+
+      <p class="cta-final__note">オンライン（ZOOM）・対面、どちらでも対応しています。<br>小さなお子様がいても、自宅から安心してご参加いただけます。</p>
+
+      <div class="cta-final__closing">
+        <p>相談だけでも、特典だけでも、大歓迎です。</p>
+        <p>「家計のおさいふプラス」は、あなたとご家族のペースに寄り添いながら、一緒に整理していきます。</p>
+        <p class="cta-final__closing-strong">まずは、一歩だけ踏み出してみてください。</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <p class="site-footer__name">家計のおさいふプラス</p>
+    <p class="site-footer__meta">栃木県 ／ 無料FP相談サービス</p>
+    <p class="site-footer__copy">© 2024 家計のおさいふプラス All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
