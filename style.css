@@ -1,5 +1,21 @@
 /* ============================================================
    家計のおさいふプラス LP — スタイルシート
+   ============================================================
+
+   ブレークポイント規約（この4値のみを使用する）
+   ------------------------------------------------------------
+   base（無指定） : 〜767px   スマホ
+   md             : 768px〜  タブレット
+   lg             : 1024px〜 小型PC
+   xl             : 1280px〜 PC標準
+
+   ファイル構成
+   ------------------------------------------------------------
+   ① トークン（色・余白・角丸・コンテナ幅）
+   ② リセット
+   ③ レイアウト部品（.section / .container / .stack / .l-grid-*）
+   ④ コンポーネント（セクションごとの見た目）
+   ⑤ レスポンシブ上書き（ファイル末尾に md → lg → xl の順でまとめる）
    ============================================================ */
 
 :root {
@@ -85,6 +101,14 @@ img {
 .stack--md { gap: 16px; margin-bottom: 32px; }
 .stack--lg { gap: 20px; }
 
+/* グリッド部品：md/lg 以上での列数はレスポンシブ上書き（ファイル末尾）で指定する。
+   base はスマホの1カラムのまま、HTML側は変更不要。 */
+.l-grid-2,
+.l-grid-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 p + p { margin-top: 0; }
 .stack > p + p { margin-top: 0; }
 
@@ -102,8 +126,12 @@ p + p { margin-top: 0; }
   margin-bottom: 32px;
 }
 
+.answer-title{
+    margin-bottom:20px;
+}
+
 .section-lead {
-  font-size: 15px;
+  font-size: 16px;
   color: var(--color-text-muted);
   line-height: 1.9;
   margin-bottom: 28px;
@@ -123,11 +151,19 @@ p + p { margin-top: 0; }
 }
 
 .eyebrow {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
-  color: var(--color-text-muted);
-  letter-spacing: 0.06em;
-  margin-bottom: 16px;
+  color: var(--color-primary);
+  letter-spacing: 0.04em;
+  margin-bottom: 14px;
+}
+
+/* ===== 共感セクション本文 ===== */
+.empathy-text p{
+    font-size:16px;
+    line-height:1.85;
+    font-weight:500;
+    color:#374151;
 }
 
 .text-accent { color: var(--color-primary); }
@@ -283,6 +319,11 @@ p + p { margin-top: 0; }
   background: linear-gradient(180deg, #EEF7FB 0%, #FFFFFF 60%);
 }
 
+/* base（モバイル）では素通りのラッパー。lg以上で2カラムグリッド化する（末尾のlgブロック参照） */
+.hero__inner {
+  width: 100%;
+}
+
 .hero__content {
   padding: 48px 24px 64px;
   max-width: var(--container-width);
@@ -293,7 +334,7 @@ p + p { margin-top: 0; }
   font-size: 28px;
   font-weight: 900;
   color: var(--color-text);
-  line-height: 1.55;
+  line-height: 1.35;
   margin-bottom: 24px;
 }
 
@@ -311,7 +352,7 @@ p + p { margin-top: 0; }
 }
 
 .cta-block {
-  margin-top: 40px;
+  margin-top: 22px;
 }
 
 .cta-hint {
@@ -325,7 +366,7 @@ p + p { margin-top: 0; }
 /* ---------- CTAボタン ---------- */
 .btn-primary {
   display: block;
-  width: 100%;
+  width: 90%;
   background: var(--color-accent);
   color: var(--color-white);
   border-radius: 50px;
@@ -375,9 +416,9 @@ p + p { margin-top: 0; }
 }
 
 .card__label {
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
+  font-size: 16px;
+  font-weight: 800;
+  //*etter-spacing: 0.06em;*/
 }
 
 .card__label--gold {
@@ -389,6 +430,10 @@ p + p { margin-top: 0; }
   font-size: 14px;
   font-weight: 700;
   color: var(--color-text-muted);
+}
+
+.solution-result{
+    margin-top:20px;
 }
 
 /* ---------- アイコン円 ---------- */
@@ -480,30 +525,35 @@ p + p { margin-top: 0; }
 
 /* ---------- コールアウト（濃い青ボックス） ---------- */
 .callout-box {
-  margin-top: 32px;
+  margin-top: 28px;
   background: var(--color-bg-alt);
   border-radius: var(--radius-lg);
-  padding: 28px 24px;
+  padding: 24px;
   text-align: center;
   font-size: 22px;
   font-weight: 900;
   color: var(--color-primary);
-  line-height: 1.65;
+  line-height: 1.55;
+}
+
+.callout-box span{
+    display:inline-block;
+    margin-top:6px;
 }
 
 /* ---------- Q&A行 ---------- */
 .qa-row {
   background: var(--color-white);
   border-radius: var(--radius-md);
-  padding: 18px 24px;
+  padding: 16px 22px;
   display: flex;
   gap: 14px;
   align-items: flex-start;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .qa-row__mark {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 900;
   color: var(--color-primary);
   line-height: 1.2;
@@ -732,25 +782,48 @@ p + p { margin-top: 0; }
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  overflow: hidden;
+}
+
+.testimonial-card__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .testimonial-card__name {
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--color-text);
-}
-
-.testimonial-card__meta {
-  font-size: 12px;
+  font-size: 13px;
   color: var(--color-text-muted);
 }
 
+.testimonial-card__headline {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1.5;
+  margin-top: 2px;
+}
+
 .testimonial-card__quote {
+  margin: 0;
+  margin-top: 18px;
+  padding-left: 20px;
+  border-left: 3px solid var(--color-primary);
+}
+
+.testimonial-card__quote-mark {
+  display: block;
+  font-size: 32px;
+  line-height: 1;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: rgba(47, 128, 237, 0.25);
+  margin-bottom: -10px;
+}
+
+.testimonial-card__quote p {
   font-size: 15px;
   line-height: 1.9;
-  background: var(--color-bg);
-  border-radius: 12px;
-  padding: 16px 18px;
+  color: var(--color-text);
 }
 
 .disclaimer {
@@ -1071,8 +1144,108 @@ p + p { margin-top: 0; }
   color: var(--color-text-muted);
 }
 
-/* ---------- レスポンシブ ---------- */
-@media (min-width: 560px) {
+/* ============================================================
+   ⑤ レスポンシブ上書き（md → lg → xl の順。値はここに集約する）
+   ============================================================ */
+
+/* ---------- スマホ専用：767px以下のみ（例外的な max-width 指定） ----------
+   タブレット（768px〜）の見た目には影響させないため、通常の
+   min-width 上書きとは逆に、ここだけ max-width で明示的にスコープする。
+   DOM順序（画像→コピー→CTA）は維持したまま、画像の高さと余白を圧縮し、
+   ファーストビュー内にコピー・CTAができるだけ収まるようにする。 */
+@media (max-width: 767px) {
+  .media-placeholder--hero,
+  .hero-image {
+    min-height: 0;
+    max-height: 180px;
+  }
+
+  .hero__content {
+    padding: 24px 24px 40px;
+  }
+
+  .hero__title {
+    margin-bottom: 16px;
+  }
+
+  .hero__lead-strong {
+    margin-top: 16px;
+  }
+
+  .cta-block {
+    margin-top: 24px;
+  }
+}
+
+/* ---------- md: 768px〜（タブレット） ---------- */
+@media (min-width: 768px) {
+  :root { --container-width: 720px; }
+
   .hero__title    { font-size: 30px; }
   .section-title  { font-size: 22px; }
+
+  /* l-grid-2 / l-grid-3 の列数は次フェーズでセクションごとに決定する */
+}
+
+/* ---------- lg: 1024px〜（小型PC） ---------- */
+@media (min-width: 1024px) {
+  :root { --container-width: 960px; }
+
+  /* ヒーロー：写真を背景として敷き、右側にコピーを重ねるオーバーレイ構成。
+     コピー背後だけグラデーション＋ぼかし（backdrop-filter）をかけて、
+     写真の内容が詰まっていても文字が読めるようにする。画像ファイル自体の加工は不要。 */
+  .hero__inner {
+    position: relative;
+    height: auto;
+    min-height: 620px;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+  }
+
+  .media-placeholder--hero,
+  .hero-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    object-fit: cover;
+    border-radius: 0;
+  }
+
+  .hero__content {
+    position: relative;
+    z-index: 2;
+    max-width: 480px;
+    margin: 0 0 0 auto;
+    padding: 48px;
+  }
+
+  /* コピー背後の可読性パネル（グラデーション＋ぼかし） */
+  .hero__content::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.30) 18%,
+      rgba(255, 255, 255, 0.65) 42%,
+      rgba(255, 255, 255, 0.92) 70%
+    );
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  .hero__title {
+    font-size: 34px;
+  }
+}
+
+/* ---------- xl: 1280px〜（PC標準） ---------- */
+@media (min-width: 1280px) {
+  :root { --container-width: 1100px; }
 }
