@@ -811,6 +811,10 @@ p + p { margin-top: 0; }
   border-left: 3px solid var(--color-primary);
 }
 
+.testimonial-card__quote p + p{
+    margin-top:5px;
+}
+
 .testimonial-card__quote-mark {
   display: block;
   font-size: 32px;
@@ -1140,7 +1144,7 @@ p + p { margin-top: 0; }
 
 .site-footer__copy {
   margin-top: 20px;
-  font-size: 11px;
+  font-size: 15px;
   color: var(--color-text-muted);
 }
 
