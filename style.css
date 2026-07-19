@@ -25,7 +25,7 @@
   --color-gold:         #F4B400;
   --color-gold-dark:    #B8860B;
   --color-bg:           #F8FAFC;
-  --color-bg-alt:        #EEF7FB;
+  --color-bg-alt:       #EAF4FF;
   --color-bg-soft:      #D4E4F5;
   --color-text:         #2D3748;
   --color-text-muted:   #718096;
@@ -190,13 +190,13 @@ p + p { margin-top: 0; }
 /* ---------- バッジ・ピル ---------- */
 .badge-pill {
   display: inline-block;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
   color: var(--color-primary);
   letter-spacing: 0.06em;
   background: var(--color-bg-alt);
-  padding: 6px 18px;
-  border-radius: 20px;
+  padding: 8px 20px;
+  border-radius: 999px;
   margin-bottom: 24px;
 }
 
@@ -254,7 +254,7 @@ p + p { margin-top: 0; }
    このクラスを付けた <img> に置き換える。 */
 .hero-image {
   width: 100%;
-  max-height: 420px;
+  /*max-height: 420px;*/
   object-fit: cover;
 }
 
@@ -367,6 +367,7 @@ p + p { margin-top: 0; }
 .btn-primary {
   display: block;
   width: 90%;
+  margin: 0 auto;
   background: var(--color-accent);
   color: var(--color-white);
   border-radius: 50px;
@@ -374,19 +375,12 @@ p + p { margin-top: 0; }
   font-size: 18px;
   font-weight: 900;
   text-align: center;
-  box-shadow: 0 6px 24px rgba(249, 115, 22, 0.35);
+  box-shadow: 0 6px 24px rgba(249, 115, 22, 0.12);
   letter-spacing: 0.02em;
 }
 
 .btn-primary:hover {
   color: var(--color-white);
-}
-
-.btn-primary--lg {
-  padding: 22px 24px;
-  font-size: 19px;
-  box-shadow: 0 6px 28px rgba(249, 115, 22, 0.45);
-  margin-bottom: 24px;
 }
 
 /* ---------- カード ---------- */
@@ -459,6 +453,15 @@ p + p { margin-top: 0; }
 
 .icon-circle--gold {
   background: rgba(244, 180, 0, 0.12);
+}
+
+.icon-circle--blue {
+  background: var(--color-primary);
+}
+
+.icon-circle--sm {
+  width: 14px;
+  height: 14px;
 }
 
 /* ---------- 引用ボックス（薄い青の枠） ---------- */
@@ -871,19 +874,19 @@ p + p { margin-top: 0; }
 }
 
 /* ---------- チェックリスト ---------- */
-.checklist {
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  box-shadow: var(--shadow-card);
-  border: 1px solid var(--color-border);
+.checklist{
+    box-shadow:none;
+    border:none;
+    border-radius:0;
+    overflow:visible;
 }
 
 .checklist__item {
   background: var(--color-white);
-  padding: 20px 24px;
+  padding: 22px 24px;
   display: flex;
   gap: 16px;
-  align-items: flex-start;
+  align-items: stretch;
   border-bottom: 1px solid #F0F4F8;
 }
 
@@ -891,12 +894,14 @@ p + p { margin-top: 0; }
   border-bottom: none;
 }
 
-.checklist__mark {
-  color: var(--color-primary);
-  font-size: 18px;
-  line-height: 1.5;
+/* ---------- チェックリストアクセントへ変更 ---------- */
+.checklist__mark{
+  width: 4px;
+  align-self: stretch;
+  background: var(--color-primary);
+  border-radius: 999px;
   flex-shrink: 0;
-  font-weight: 700;
+  opacity: .9;
 }
 
 /* ---------- 特典ボックス ---------- */
@@ -988,16 +993,20 @@ p + p { margin-top: 0; }
 
 .faq-item__answer {
   display: none;
-  padding: 0 24px 22px;
+  padding: 20px 24px 22px;
   border-top: 1px solid #F0F4F8;
   margin-top: -1px;
 }
 
 .faq-item__answer p {
-  padding-top: 20px;
+  margin: 0;
   font-size: 15px;
   color: var(--color-text-muted);
   line-height: 1.9;
+}
+
+.faq-item__answer p + p {
+  margin-top: 12px;
 }
 
 .faq-item.is-open .faq-item__answer {
@@ -1188,12 +1197,23 @@ p + p { margin-top: 0; }
   .hero__title    { font-size: 30px; }
   .section-title  { font-size: 22px; }
 
+  .section-image {
+    width: 82%;
+    display: block;
+    margin: 0 auto 32px;
+  }
+
   /* l-grid-2 / l-grid-3 の列数は次フェーズでセクションごとに決定する */
 }
+
 
 /* ---------- lg: 1024px〜（小型PC） ---------- */
 @media (min-width: 1024px) {
   :root { --container-width: 960px; }
+
+  .section-image {
+    width: 76%;
+  }
 
   /* ヒーロー：写真を背景として敷き、右側にコピーを重ねるオーバーレイ構成。
      コピー背後だけグラデーション＋ぼかし（backdrop-filter）をかけて、
@@ -1201,7 +1221,7 @@ p + p { margin-top: 0; }
   .hero__inner {
     position: relative;
     height: auto;
-    min-height: 620px;
+    min-height: 560px;
     max-width: var(--container-width);
     margin: 0 auto;
     border-radius: var(--radius-lg);
@@ -1213,25 +1233,32 @@ p + p { margin-top: 0; }
     position: absolute;
     inset: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
     min-height: 0;
+    max-height:560px;
     object-fit: cover;
     border-radius: 0;
+    object-position:center bottom
   }
 
   .hero__content {
     position: relative;
     z-index: 2;
+    height:100%;
     max-width: 480px;
     margin: 0 0 0 auto;
-    padding: 48px;
+    padding: 48px 48px 16px 48px;
   }
 
   /* コピー背後の可読性パネル（グラデーション＋ぼかし） */
   .hero__content::before {
     content: "";
     position: absolute;
-    inset: 0;
+    /*inset: 0;*/
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: -40px;   /* まずは -40px を試す */
     z-index: -1;
     background: linear-gradient(
       to right,
